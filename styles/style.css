@@ -1,0 +1,425 @@
+/* body style*/
+
+.body-content-hobbies {
+    background-color:white
+}
+
+
+#title-bp {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+/* button Go Style*/
+.go-btn {
+        width:100px;
+        height:40px;
+        background-color:bisque;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 9px;
+        text-decoration: none;
+}
+/* Grid container layout for the article   page*/
+.container-article {
+    display: grid;
+    width: 90vw;
+    height: 100vh;
+    margin:auto;
+    font-size: 9px;
+   /* margin-top:150px;*/
+    /*setup rows and columns*/
+    grid-template-columns: minmax(50px,20%) repeat(4,1fr);
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas:  "hd hd hd hd hd"
+                          "main main main main main"
+                          "ft ft ft ft ft";
+}
+/* grid layout for village and myhobbies pages  */
+.container {
+    /* set display property to grid*/
+    display: grid;
+    width: 90vw;
+    height: 100vh; /* assign all view port height to container*/
+    margin:auto;
+    font-size: 9px;
+   /* margin-top:150px;*/
+    /*setup rows and columns*/
+    grid-template-columns: minmax(50px,20%) repeat(4,1fr);
+    grid-template-rows: 20% 70% 10%;
+    grid-template-areas: "hd hd hd hd hd"
+                          "side main main main main"
+                          "ft ft ft ft ft";
+    
+}
+#title-header {
+    text-align: center;
+    color:cornflowerblue;
+    font-weight: 900;
+    font-size: 9px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    border-width: 3px;
+}
+.box{
+    border: 1px solid red;
+    background: rgba(233, 207, 207, 0.3);
+}
+.header {
+   
+    grid-area: hd;
+    background-image: url('../images/oregon_coast_beach_pacific.jpeg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    border-width: 0px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 9px;
+    background-color: mistyrose;
+}
+.footer {
+    display:flex;
+    grid-area:ft; /* define grid area to associate*/
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    flex-direction: row;
+}
+
+.sidebar {
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    grid-area:side; /* define grid area to associate*/
+    font-size: 9px;
+    border-width: 0px;
+    margin-right: 5px;
+    border-radius: 15px;
+    background: rgba(76, 175, 80, 0.3) /* Green background with 30% opacity */
+    /*background-image: url('../images/oregon_coast_beach_pacific.jpeg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;*/
+   
+}
+
+
+/* define flex container for main data flow*/
+
+.content {
+    display:flex;
+    border-width: 0px;
+    margin-left: 5px;
+    border-radius: 15px;
+    grid-area:main;
+    font-size: 9px;
+    /* background-image:url('../images/oregon_beach_sand_rocks.jpeg');
+    background-position: center; 
+    background-size:100% 100%;
+    background-repeat:no-repeat;*/
+    background: rgba(76, 175, 80, 0.3); /* Green background with 30% opacity */
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+/* define flex container for main data flow on the home page*/
+.frontcontainer {
+    display:flex;
+   /* width :100vw;
+    height:100vh;*/
+    font-size: 9px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+/* define main flex container for main data flow on the home page*/
+.frontwrapper {
+    display:flex;
+    width :100vw;
+    height:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    font-size: 9px;
+}
+
+.frontbox1 {
+    /*display:flex;*/
+   /* align-items: center;
+    justify-content: center;*/
+    order:2;  /* define order for flex item in flex container*/
+    width: 25vw;
+    height :33vh;
+    border: 2px dashed red;
+    background:#7174ab;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 9px;
+   
+}
+.frontbox2 {
+    /*display:inline-block;*/
+   /* display:flex;*/
+   /* align-items: center;
+    justify-content: center;*/
+    order:1;  /* define order for flex item in flex container*/
+    width: 25vw;
+    height :33vh;
+    border: 2px dashed red;
+    background:#7174ab;
+    text-align: center;
+    vertical-align: center;
+    border-radius: 20px;
+    font-size: 9px;
+}
+.frontbox3 {
+    /*display:inline-block;*/
+    /* display:flex;*/
+  /*  align-items: center;
+    justify-content: center;*/
+    order:3;  /* define order for flex item in flex container*/
+    width: 25vw;
+    height :33vh;
+    border: 2px dashed red;
+    background:#7174ab;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 9px;
+}
+/* style menu items*/
+ul.menu {
+   list-style-type: none; 
+   font-size: 9px;
+}
+ul.menu li {
+   padding-bottom: 15px;
+}
+/* style links*/
+ul.menu li a {
+    font-weight: bold;
+    color:coral;
+ }
+ #hobbies {
+     
+ }
+ .menu-articles {
+     margin-left: 20px;;
+ }
+ .hobbies-tile-menu-box {
+     display:flex;
+     margin: 10px;
+     
+    /* border: 2px dashed red;*/
+     flex-direction: row;
+     align-items:center;
+     justify-content: space-evenly;
+    
+}
+.hobbies-tile-menu {
+    border-width: 5px;
+}
+.hobbies-icon-menu {
+    font-size:48px;
+    color:red";
+}
+ .title-content-hobbies {
+}
+ .body-content-hobbies {
+}
+
+#maintenance {
+  width:20px;
+  height:20px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media(max-width: 320px) {
+    body {
+        font-size: 0.5em;
+        padding: 2px;
+        border-width: 0px;
+    }
+    .go-btn {
+        width:50px;
+        height:20px;
+        background-color:bisque;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.5em;
+        text-decoration: none;
+}
+.content {
+    font-size: 0.5em;
+}
+
+.frontcontainer {
+  grid-gap:3px;
+  font-size: 0.5em;
+}
+.frontwrapper {
+   grid-gap: 3px;
+   font-size: 0.5em;
+}
+.frontbox1 {
+   border-radius: 4px;
+   font-size: 0.5em;
+}
+.frontbox2 {
+     border-radius: 4px;
+     font-size: 0.5em;
+ }
+ .menu-articles {
+    margin-left: 2px;;
+}
+.hobbies-tile-menu-box {
+ margin: 2px;
+ font-size: 0.5em;
+}
+ul.menu li {
+    padding-bottom: 3px;
+    font-size: 0.5em;
+ }
+ .menu-articles {
+    margin-left: 2px;
+    font-size: 0.5em;
+}
+.hobbies-tile-menu-box {
+    margin:2px;
+    font-size: 0.5em;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media(min-width: 901px) {
+    body {
+        font-size: 2em;
+        padding: 2px;
+        border-width: 0px;
+    }
+    #title-header {
+        text-align: center;
+        color:cornflowerblue;
+        font-weight: 900;
+        font-size: 2em;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-width: 3px;
+    }
+    .go-btn {
+        width:10px;
+        height:5px;
+        background-color:bisque;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 2em;
+        text-decoration: none;
+ }
+ .content {
+    font-size: 2em;
+}
+.frontcontainer {
+  grid-gap:3px;
+  font-size: 2em;
+}
+.frontwrapper {
+   grid-gap: 3px;
+   font-size: 2em;
+}
+.frontbox1 {
+   border-radius: 4px;
+   font-size: 2em;
+}
+.frontbox2 {
+     border-radius: 4px;
+     font-size: 2em;
+ }
+ .menu-articles {
+    margin-left: 2px;
+    font-size: 2em;
+}
+.hobbies-tile-menu-box {
+ margin: 2px;
+ font-size: 2em;
+}
+ul.menu li {
+    padding-bottom: 3px;
+    font-size: 2em;
+ }
+ .menu-articles {
+    margin-left: 2px;
+    font-size: 2em;
+}
+.hobbies-tile-menu-box {
+    margin:2px;
+    font-size: 2em;
+}
+
+}
+@media(min-width: 600px) and (max-width: 900px) {
+    body {
+        font-size: 1.4em;
+        padding: 2px;
+        border-width: 0px;
+    }
+    #title-header {
+        text-align: center;
+        color:cornflowerblue;
+        font-weight: 900;
+        font-size: 2em;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-width: 3px;
+    }
+    .go-btn {
+        width:10px;
+        height:5px;
+        background-color:bisque;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.4em;
+        text-decoration: none;
+ }
+ .content {
+    font-size: 1.4em;
+}
+.frontcontainer {
+  grid-gap:3px;
+  font-size: 1.4em;
+}
+.frontwrapper {
+   grid-gap: 3px;
+   font-size: 1.4em;
+}
+.frontbox1 {
+   border-radius: 4px;
+   font-size: 1.4em;
+}
+.frontbox2 {
+     border-radius: 4px;
+     font-size: 1.4em;
+ }
+ .menu-articles {
+    margin-left: 2px;
+    font-size: 1.4em;
+}
+.hobbies-tile-menu-box {
+ margin: 2px;
+ font-size: 1.4em;
+}
+ul.menu li {
+    padding-bottom: 3px;
+    font-size: 1.4em;
+ }
+ .menu-articles {
+    margin-left: 2px;
+    font-size: 1.4em;
+}
+.hobbies-tile-menu-box {
+    margin:2px;
+    font-size: 1.4em;
+}
+}
