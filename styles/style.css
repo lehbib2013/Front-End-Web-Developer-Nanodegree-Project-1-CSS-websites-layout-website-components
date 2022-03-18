@@ -11,13 +11,13 @@
 }
 /* button Go Style*/
 .go-btn {
-        width:100px;
-        height:40px;
-        background-color:bisque;
-        border-radius: 15px;
-        cursor: pointer;
-        font-size: 9px;
-        text-decoration: none;
+    width:50px;
+    height:30px;
+    background-color:bisque;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.5em;
+    text-decoration: none;
 }
 /* Grid container layout for the article   page*/
 .container-article {
@@ -203,9 +203,7 @@ ul.menu li a {
     font-weight: bold;
     color:coral;
  }
- #hobbies {
-     
- }
+
  .menu-articles {
      margin-left: 20px;;
  }
@@ -243,9 +241,18 @@ ul.menu li a {
         padding: 2px;
         border-width: 0px;
     }
+    #title-header {
+        text-align: center;
+        color:cornflowerblue;
+        font-weight: 900;
+        font-size:0.5em;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-width: 3px;
+    }
     .go-btn {
         width:50px;
-        height:20px;
+        height:20;
         background-color:bisque;
         border-radius: 5px;
         cursor: pointer;
@@ -264,14 +271,7 @@ ul.menu li a {
    grid-gap: 3px;
    font-size: 0.5em;
 }
-.frontbox1 {
-   border-radius: 4px;
-   font-size: 0.5em;
-}
-.frontbox2 {
-     border-radius: 4px;
-     font-size: 0.5em;
- }
+
  .menu-articles {
     margin-left: 2px;;
 }
@@ -310,8 +310,8 @@ ul.menu li {
         border-width: 3px;
     }
     .go-btn {
-        width:10px;
-        height:5px;
+        width:70px;
+        height:30px;
         background-color:bisque;
         border-radius: 5px;
         cursor: pointer;
@@ -329,14 +329,7 @@ ul.menu li {
    grid-gap: 3px;
    font-size: 2em;
 }
-.frontbox1 {
-   border-radius: 4px;
-   font-size: 2em;
-}
-.frontbox2 {
-     border-radius: 4px;
-     font-size: 2em;
- }
+
  .menu-articles {
     margin-left: 2px;
     font-size: 2em;
@@ -369,14 +362,14 @@ ul.menu li {
         text-align: center;
         color:cornflowerblue;
         font-weight: 900;
-        font-size: 2em;
+        font-size: 1.4em;
         font-family: 'Courier New', Courier, monospace;
         padding: 10px;
         border-width: 3px;
     }
     .go-btn {
-        width:10px;
-        height:5px;
+        width:60px;
+        height:25px;
         background-color:bisque;
         border-radius: 5px;
         cursor: pointer;
@@ -394,14 +387,7 @@ ul.menu li {
    grid-gap: 3px;
    font-size: 1.4em;
 }
-.frontbox1 {
-   border-radius: 4px;
-   font-size: 1.4em;
-}
-.frontbox2 {
-     border-radius: 4px;
-     font-size: 1.4em;
- }
+
  .menu-articles {
     margin-left: 2px;
     font-size: 1.4em;
