@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8" />
-        <title>Articles </title>
-        <meta content="width=device-width, initial-scal=1, maximum-scale=1" name="viewport">
-        <link rel="stylesheet" href="styles/style.css" />
-    </head>
-    <!-- 
+<head>
+<meta charset="utf-8" />
+<title>My Blog Site </title>
+<meta content="width=device-width, initial-scal=1, maximum-scale=1" name="viewport">
+<link rel="stylesheet" href="styles/style.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link
+			href="https://fonts.googleapis.com/css?family=Titillium Web:400,500,500i,700|Playfair+Display:400,700&display=swap"
+			rel="stylesheet"
+		/>
+</head>
+<!-- 
     For purpose demonstration , some free images werer picked up from this siten:
     https://kaboompics.com/photo/25545/laptop-computer-keyboard-magic-mouse-glass-of-water
 
     Also I used some icons from this site :
     https://iconarchive.com/show/pretty-office-5-icons-by-custom-icon-design/maintenance-icon.html
-    -->
-    <body>
-       <div class="frontwrapper">
-           <h1 id="title-header">Welcom to my blog page</h1>
-       <div class="frontcontainer">
-        <div class="frontbox1">
-            <h1>Hobbies</h1>
-        <p>You can navigate to see my hobbies list.</p>
-        <button class="go-btn" onclick="window.location.href='myhobbies.html'">Go</button>
-        
-        </div>
-      <div class="frontbox2">
-            <h1>Articles</h1>
-            <p>You can navigate to see my hobbies list.</p>
-            <button class="go-btn" onclick="window.location.href='myvilage.html'" >Go</button>
-        </div>
-        <div class="frontbox3">
-            <h1>My Village</h1>
-            <p>You can navigate to see my hobbies list.</p>
-            <button class="go-btn" onclick="window.location.href='articles.html'">Go</button>
-        </div>
-       </div>
-           
-     
-      </div>
 
-    </body>
+    I inspired also from nice work of this link:
+       https://the-manpreet-singh.github.io/Personal-Blog-Website/
+    -->
+
+<body>
+<div id="front-main-container">
+  <div class="logo">
+    <h1 id="logo">Lehbib</h1>
+  </div>
+  <nav id="mobile-nav"> <img id="img-nav" href="" src="images/icons8-menu-64.png" /> </nav>
+  <nav class="nav-menu">
+    <ul id="list-menu">
+      <li class="menu-item"><a class="link-item" href="index.html">Home</a></li>
+      <li class="menu-item"><a class="link-item" href="posts.html">Posts</a></li>
+      <li class="menu-item"><a class="link-item" href="#">About me</a></li>
+    </ul>
+  </nav>
+  <section class="content">
+    <div class="front-box">
+      <h1>Posts</h1>
+      <p>You can navigate throut available posts right here.</p>
+      <button class="go-btn" onclick="window.location.href='posts.html'">Go</button>
+    </div>
+    <div class="front-box">
+      <h1>Hobbies</h1>
+      <p>You can navigate to hobbies by below link.</p>
+      <button class="go-btn" onclick="window.location.href='hobbies.html'" >Go</button>
+    </div>
+    <div class="front-box">
+      <h1>About Me</h1>
+      <p>Don't know me, please it's me.</p>
+      <button class="go-btn" onclick="window.location.href='about.html'">Go</button>
+    </div>
+  </section>
+  <div class="my-info">
+    <p id="copyright">©2022, By lehbib</p>
+  </div>
+  <footer class="social-links"> <a class="soc-link" href="https://mr.linkedin.com/in/mohamed-lehbib-ould-youba-796496117/"> <i class="fa fa-linkedin"></i> </a> <a class="soc-link" href="https://twitter.com/lehbibouldyouba"> <i class="fa fa-twitter"></i> </a> <a class="soc-link" href="https://https://www.facebook.com/"> <i class="fa fa-facebook"></i> </a> </footer>
+</div>
+</body>
 </html>

@@ -1,0 +1,48 @@
+/* CSS Document */
+#nav-list {
+  margin-right: 10px;
+}
+#img-nav {
+  margin-left: 10px;
+}
+#logo {
+  margin-left: 10px;
+}
+.soc-link {
+  margin-left: 10px;
+}
+#copyright {
+  margin-left: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+}
+.my-info {
+  display: flex;
+  grid-area: info;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(242, 203, 65, 1.00);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: social;
+  background-color: rgba(242, 203, 65, 1.00);
+  border-top-rightt-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.linkedin {
+  opacity: 0.4;
+  width: 20px;
+  height: 20px;
+}
