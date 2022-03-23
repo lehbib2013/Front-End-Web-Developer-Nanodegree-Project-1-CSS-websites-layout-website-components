@@ -94,12 +94,14 @@ card-prev {
   padding: 0px;
 }
 strong {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-weight: 800;
   letter-spacing: 0.08em;
 }
 em {
-  font-family: "Montserrat", sans-serif;
+  margin-right:10px;
+  font-size:1em;
+  font-family: "Titillium Web", sans-serif;
   font-style: 500i;
   letter-spacing: 0.05em;
 }
@@ -114,7 +116,7 @@ figcaption {
   text-align: right;
 }
 .second-paragraph {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-style: 500i;
   letter-spacing: 0.05em;
   margin: 3px;
